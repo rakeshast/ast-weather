@@ -1,0 +1,51 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ /* Admin css */
+.ast-container, .ast-container form{
+    width:100%;
+}
+.ast-container form{
+    max-width: 500px;
+}
+.ast-container h2{
+    background-color: rgb(113, 143, 5);
+    padding: 10px 15px;
+}
+.ast-container .form{
+    padding: 10px 15px;
+}
+.ast-container ul{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+}
+.ast-container li{
+    width:50%;
+    float: left;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.ast-container label, .ast-container input[type=text]{
+    font-size: 16px;
+    font-weight: 400;
+    width:100%;
+    display: block;
+}
+
+.ast-container input{
+    border: 1px solid #c5c5c5;
+    border-radius: 0;
+}
+.ast-container .btn{
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(113, 143, 5);
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+}
+
+

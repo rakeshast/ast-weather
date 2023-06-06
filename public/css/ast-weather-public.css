@@ -1,0 +1,57 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* =============================
+ * Admin css
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+/* =============================
+ * User css
+================================*/
+
+.ast-drop{
+    background-image: url('../../public/images/bg.jpg');
+    border-radius: 15px;
+    border-style: solid;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    padding: 20px;
+    color: #edebe9;
+}
+.ast-d-flex{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.ast-d-flex h6{
+    color:#fff;
+    font-size: 16px;
+}
+
+.ast-flex-grow-1{
+    flex-grow: 1;
+}
+.ast-flex{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ast-flex h1{
+    padding: 0;
+}
+.ast-flex-column h1, .ast-flex-column .small{
+    width: 100%;
+}
