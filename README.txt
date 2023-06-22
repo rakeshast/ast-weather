@@ -68,7 +68,7 @@ To retrieve weather data, you need to set up an API key. Follow these steps to o
 
 ### General Settings
 To configure the general settings of the WordPress Ast Weather Plugin, follow these steps:
-1. In your WordPress dashboard, go to "Tools" -> "Ast Weather".
+1. In your WordPress dashboard, go to "Settings" -> "Ast Weather".
 2. Enter the API key you obtained in the "API Key" field.
 3. Adjust other settings as needed, such as temperature units, language, etc.
 4. Save the changes.
