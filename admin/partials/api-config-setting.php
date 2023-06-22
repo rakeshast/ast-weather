@@ -31,6 +31,46 @@
 
 <?php 
 
+
+
+
+
+
+function process_form_data() {
+    // Retrieve form data and perform validation
+    $form_data = $_POST['form_data']; // Replace with your actual form data retrieval method
+
+    // Perform validation on $form_data
+    $errors = array();
+
+    if (empty($form_data['field1'])) {
+        $errors[] = 'Field 1 is required.';
+    }
+
+    if (empty($form_data['field2'])) {
+        $errors[] = 'Field 2 is required.';
+    }
+
+    // Check if there are any errors
+    if (!empty($errors)) {
+        foreach ($errors as $error) {
+            add_settings_error('form_errors', 'form_error', $error, 'error');
+        }
+        return;
+    }
+
+    // If no errors, proceed to save the value in wp_options
+    $value_to_store = $form_data['field1']; // Replace with the value you want to store
+
+    // Store the value in wp_options
+    update_option('your_option_name', $value_to_store);
+
+    // Display a success message or perform any additional actions
+    add_settings_error('form_success', 'form_success', 'Value has been stored successfully.', 'updated');
+}
+
+
+
 function traitement_formulaire_don_cagnotte() {
     $error_message = [];
 	if ( ! isset( $_POST['submit'] ) || ! isset( $_POST['weather-verif'] ) )  {

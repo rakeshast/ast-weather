@@ -157,6 +157,9 @@ class Ast_Weather {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'ast_weather_admin_menu' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'my_save_settings' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'my_register_settings_fields' );
+
 
 	}
 
